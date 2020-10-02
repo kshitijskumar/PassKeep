@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".activities.SetAuthKey">
+
+    <EditText
+        android:id="@+id/oldPwView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:autofillHints="Old Authentication Key"
+        android:ems="10"
+        android:hint="@string/old_authentication_key"
+        android:inputType="numberPassword"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <EditText
+        android:id="@+id/newPwView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:autofillHints="New Authentication Key"
+        android:ems="10"
+        android:hint="@string/new_authentication_key"
+        android:inputType="numberPassword"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/oldPwView"
+        app:layout_constraintStart_toStartOf="@+id/oldPwView"
+        app:layout_constraintTop_toBottomOf="@+id/oldPwView" />
+
+    <EditText
+        android:id="@+id/confirmPwView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:autofillHints="Confirm Key"
+        android:ems="10"
+        android:hint="@string/confirm_key"
+        android:inputType="numberPassword"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/newPwView"
+        app:layout_constraintStart_toStartOf="@+id/newPwView"
+        app:layout_constraintTop_toBottomOf="@+id/newPwView" />
+
+    <Button
+        android:id="@+id/setBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/custom_buttons"
+        android:padding="8dp"
+        android:text="@string/set_key"
+        android:textColor="#ffab91"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/confirmPwView"
+        app:layout_constraintStart_toStartOf="@+id/confirmPwView"
+        app:layout_constraintTop_toBottomOf="@+id/confirmPwView" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35" />
+</androidx.constraintlayout.widget.ConstraintLayout>

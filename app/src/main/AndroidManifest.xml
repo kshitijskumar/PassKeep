@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.passkeep">
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activities.DeleteData"
+            android:noHistory="true"
+            android:label="Delete Data">
+
+        </activity>
+        <activity android:name=".activities.UpdateData"
+            android:noHistory="true"
+            android:label="Update Data"/>
+        <activity
+            android:name=".activities.AddLoginData"
+            android:noHistory="true"
+            android:label="Add Data"/>
+        <activity
+            android:name=".activities.SetAuthKey"
+            android:label="Setup Authentication Key"
+            android:noHistory="true" />
+        <activity android:name=".activities.MainActivity"
+                android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.EnterAuthKey"
+            android:label="Authentication"
+            android:noHistory="true"
+            android:parentActivityName=".activities.MainActivity" />
+        <activity
+            android:name=".activities.RetrieveMenu"
+            android:label="Menu"
+            android:noHistory="true"
+            android:parentActivityName=".activities.MainActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

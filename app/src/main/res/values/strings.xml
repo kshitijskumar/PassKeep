@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">PassKeep</string>
+    <string name="passkeep">PassKeep</string>
+    <string name="title_activity_retrieve_menu">RetrieveMenu</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="submit">submit</string>
+    <string name="title_activity_main2">MainActivity</string>
+    <string name="website">Website</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="add">ADD</string>
+    <string name="delete">Delete</string>
+    <string name="enter">Enter</string>
+    <string name="authorization_key">Authorization Key</string>
+    <string name="authentication_key">Authentication Key</string>
+    <string name="retrieve">Get/Add</string>
+    <string name="your_own_password_manager">Your own password manager</string>
+    <string name="updated">Updated</string>
+    <string name="menu_add">Add</string>
+    <string name="old_authentication_key">Old Authentication Key</string>
+    <string name="new_authentication_key">New Authentication Key</string>
+    <string name="confirm_key">Confirm Key</string>
+    <string name="set_key">Set Key</string>
+    <string name="update">Update</string>
+    <string name="recycler_website">Website:</string>
+    <string name="recycler_username">Username:</string>
+    <string name="recycler_password">Password:</string>
+
+</resources>

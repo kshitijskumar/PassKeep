@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".activities.UpdateData">
+
+    <EditText
+        android:id="@+id/pwView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:autofillHints="Password"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/usernameView"
+        app:layout_constraintStart_toStartOf="@+id/usernameView"
+        app:layout_constraintTop_toBottomOf="@+id/usernameView" />
+
+    <EditText
+        android:id="@+id/siteView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints="Website"
+        android:ems="10"
+        android:hint="@string/website"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <EditText
+        android:id="@+id/usernameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:autofillHints="Username"
+        android:ems="10"
+        android:hint="@string/username"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/siteView"
+        app:layout_constraintStart_toStartOf="@+id/siteView"
+        app:layout_constraintTop_toBottomOf="@+id/siteView" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="49dp" />
+
+    <Button
+        android:id="@+id/updateBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_buttons"
+        android:padding="8dp"
+        android:text="@string/update"
+        android:textColor="#ffab91"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/pwView"
+        app:layout_constraintStart_toStartOf="@+id/pwView"
+        app:layout_constraintTop_toBottomOf="@+id/pwView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

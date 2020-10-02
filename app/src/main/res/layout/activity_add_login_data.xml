@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".activities.AddLoginData">
+
+    <EditText
+        android:id="@+id/siteView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:autofillHints="Website"
+        android:ems="10"
+        android:hint="@string/website"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+    <EditText
+        android:id="@+id/usernameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:autofillHints="Username"
+        android:ems="10"
+        android:hint="@string/username"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/siteView"
+        app:layout_constraintStart_toStartOf="@+id/siteView"
+        app:layout_constraintTop_toBottomOf="@+id/siteView" />
+
+    <EditText
+        android:id="@+id/pwView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:autofillHints="Password"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/usernameView"
+        app:layout_constraintStart_toStartOf="@+id/usernameView"
+        app:layout_constraintTop_toBottomOf="@+id/usernameView" />
+
+    <Button
+        android:id="@+id/setBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/custom_buttons"
+        android:padding="8dp"
+        android:text="@string/add"
+        android:textColor="#ffab91"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/pwView"
+        app:layout_constraintStart_toStartOf="@+id/pwView"
+        app:layout_constraintTop_toBottomOf="@+id/pwView" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
