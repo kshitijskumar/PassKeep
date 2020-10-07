@@ -7,7 +7,7 @@ So PassKeep saves you from this. You can add website name, username, password in
 
 ### Screenshots
 #### Main screen
-![](Screenshot_20200926-155928_PassKeep.jpg height=300)
+![](Screenshot_20200926-155928_PassKeep.jpg)
 #### Data
 ![](Screenshot_20200926-162239_PassKeep.jpg)
 #### Authentication key
